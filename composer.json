@@ -11,12 +11,13 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "~5.1"
+        "illuminate/support": "~5.1",
+        "tavaresevora/commentable": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "Tavaresevora\\Commentable\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "master"
 }

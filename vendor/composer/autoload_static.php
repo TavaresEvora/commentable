@@ -6,30 +6,46 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit649cb884827396a594a983a19ba39c49
 {
+    public static $files = array (
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
             'Tavaresevora\\Commentable\\' => 25,
         ),
-        'A' => 
+        'I' => 
         array (
-            'App\\' => 4,
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Tavaresevora\\Commentable\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/packages/tavaresevora/commentable/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
-        'App\\' => 
+        'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
     );
 
-    public static $classMap = array (
-        'CreateCommentsTable' => __DIR__ . '/../..' . '/src/database/2016_11_08_164127_create_comments_table.php',
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -37,7 +53,7 @@ class ComposerStaticInit649cb884827396a594a983a19ba39c49
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit649cb884827396a594a983a19ba39c49::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit649cb884827396a594a983a19ba39c49::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit649cb884827396a594a983a19ba39c49::$classMap;
+            $loader->prefixesPsr0 = ComposerStaticInit649cb884827396a594a983a19ba39c49::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

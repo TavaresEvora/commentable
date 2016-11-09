@@ -6,5 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CreateCommentsTable' => $baseDir . '/src/database/2016_11_08_164127_create_comments_table.php',
 );
