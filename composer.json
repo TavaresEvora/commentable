@@ -1,7 +1,7 @@
 {
     "name": "tavaresevora/commentable",
     "description": "A basic starting point for a flexible commentable system in Laravel",
-    "homepage": "https://github.com/TavaresEvora/laravel-commentable",
+    "homepage": "https://github.com/TavaresEvora/commentable",
     "license": "MIT",
     "authors": [
         {
