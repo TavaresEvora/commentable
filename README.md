@@ -6,7 +6,7 @@ Add commentable to your composer.json file to require Scafold :
 ```
     require : {
         ...
-        "tavaresevora/commentable": "dev"
+        "tavaresevora/commentable": "dev-master"
     }
 ```
  
