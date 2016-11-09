@@ -17,6 +17,5 @@
             "Tavaresevora\\Commentable\\": "src/"
         }
     },
-    "minimum-stability": "dev-master",
-    "prefer-stable" : true
+    "minimum-stability": "dev"
 }
