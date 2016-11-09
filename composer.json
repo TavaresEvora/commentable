@@ -6,7 +6,9 @@
     "authors": [
         {
             "name": "TavaresEvora",
-            "email": "Tavares.evora.v@gmail.com"
+            "email": "Tavares.evora.v@gmail.com",
+            "homepage": "http://tavaresevora.com",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -16,6 +18,11 @@
     "autoload": {
         "psr-4": {
             "Tavaresevora\\Commentable\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     },
     "minimum-stability": "dev",
