@@ -2,7 +2,7 @@
  
 ### Installation ###
  
-Add commentable to your composer.json file to require Scafold :
+Add commentable to your composer.json file to require :
 ```
     require : {
         ...
