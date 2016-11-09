@@ -16,5 +16,7 @@
         "psr-4": {
             "Tavaresevora\\Commentable\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev-master",
+    "prefer-stable" : true
 }
