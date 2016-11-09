@@ -1,0 +1,22 @@
+{
+    "name": "tavaresevora/commentable",
+    "description": "A basic starting point for a flexible commentable system in Laravel",
+    "homepage": "https://github.com/TavaresEvora/laravel-commentable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TavaresEvora",
+            "email": "Tavares.evora.v@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tavaresevora\\Commentable\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
