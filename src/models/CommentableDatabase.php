@@ -36,7 +36,9 @@ trait CommentableDatabase{
      * Create a new comment
      * @param $body
      * @param Model $author
-     * @param $activate |NULL
+     * @param boolean null $validate
+     * @return
+     * @internal param $activate |NULL
      */
     public function addComment($body, Model $author, $validate = NULL){
         return $this->comments()->save(
@@ -44,7 +46,7 @@ trait CommentableDatabase{
                 'body' => $body,
                 'author_type' => get_class($author),
                 'author_id' => $author->id,
-                'validate' => $activate
+                'validate' => $validate
             ])
         );
     }

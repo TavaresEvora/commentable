@@ -22,6 +22,7 @@ The next required step is to add the service provider to config/app.php :
  
 Migrate comments table
 ```
+  php artisan vendor:publish --tag=comment-migrations
   php artisan migrate
 ```
  
