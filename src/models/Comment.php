@@ -19,7 +19,7 @@ class Comment extends Model
      * @var array
      */
     protected $guarded = [
-
+        'id'
     ];
 
     /**
@@ -30,8 +30,13 @@ class Comment extends Model
         return $this->morphTo();
     }
 
-    public function author() {
-        return $this->morphTo('author');
+    /**
+     * Get author
+     * @return mixed
+     */
+    public function author()
+    {
+        return $this->morphTo();
     }
     
 }
