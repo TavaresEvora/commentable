@@ -81,3 +81,14 @@ delete a comment
     
     //deleteComment(Comment $comment)
 ```
+
+get author of comment
+``` php
+    <?php
+    
+    @foreach($post->comments as $comment)
+        <p>
+            {{ $comment->body }} - <span>{{ $comment->author->name }}</span>
+        </p>
+    @endforeach
+```
