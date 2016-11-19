@@ -33,6 +33,15 @@ trait CommentableDatabase{
     }
 
     /**
+     * Get author
+     * @return mixed
+     */
+    public function author()
+    {
+        return $this->morphTo('\\'.$this->author_type, 'author_id');
+    }
+
+    /**
      * Create a new comment
      * @param $body
      * @param Model $author
