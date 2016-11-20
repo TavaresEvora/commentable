@@ -13,7 +13,7 @@ trait CommentableDatabase{
      */
     public function comments()
     {
-        return $this->morphMany(Comment::class, 'commentable')->orderBy('created_at', 'desc');
+        return $this->morphMany(Comment::class, 'commentable')->orderBy('created_at', 'desc')->with('author');
     }
 
     /**
@@ -21,7 +21,7 @@ trait CommentableDatabase{
      */
     public function validatedComments()
     {
-        return $this->morphMany(Comment::class, 'commentable')->where('validate', true)->orderBy('created_at', 'desc');
+        return $this->morphMany(Comment::class, 'commentable')->where('validate', true)->orderBy('created_at', 'desc')->with('author');
     }
 
     /**
@@ -29,7 +29,7 @@ trait CommentableDatabase{
      */
     public function unvalidatedComments()
     {
-        return $this->morphMany(Comment::class, 'commentable')->where('validate', false)->orderBy('created_at', 'desc');
+        return $this->morphMany(Comment::class, 'commentable')->where('validate', false)->orderBy('created_at', 'desc')->with('author');
     }
 
     /**
