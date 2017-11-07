@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use phpDocumentor\Reflection\Types\Boolean;
 
 trait CommentableDatabase{
-    
+
     /**
      * Get the entity's comments.
      */
@@ -78,7 +78,7 @@ trait CommentableDatabase{
      * @return bool
      */
     public function updateComment(Comment $comment, $body, Model $author = NULL) {
-        $author = ( isset($author)) ? $author : $comment->author;
+        $author = (isset($author)) ? $author : $comment->author;
         return $comment->update([
             'body' => $body,
             'author_type' => get_class($author),
@@ -95,5 +95,14 @@ trait CommentableDatabase{
      */
     public function deleteComment(Comment $comment) {
         return $comment->delete();
+    }
+
+    /**
+     * Get how many comments
+     *
+     * @return mixed
+     */
+    public function countComment() {
+        return $this->comments()->count();
     }
 }

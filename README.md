@@ -50,7 +50,7 @@ Add new comment
     
     $post = App\Post::first();
     $user = Auth::user();
-    $video->addComment('Superbe article !', $user);
+    $post->addComment('Superbe article !', $user);
     
     //addComment($body, Model $author, $validate = NULL);
 ```
