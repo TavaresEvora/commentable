@@ -11,15 +11,13 @@
             "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/support": "5.3.* || 5.4.* || 5.5.*",
+        "illuminate/database": "5.3.* || 5.4.* || 5.5.*"
+    },
     "autoload": {
         "psr-4": {
             "Tavaresevora\\Commentable\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
         }
     },
     "minimum-stability": "dev",
